@@ -1,28 +1,10 @@
-<div class="layout">
-    <header>
-      <!-- Aquí el encabezado de la aplicación -->
-      <h1>Mi Aplicación</h1>
-    </header>
-    
-    <div class="content">
-      <aside>
-        <!-- Aquí la barra lateral -->
-        <nav>
-          <a routerLink="/home">Home</a>
-          <a routerLink="/pages">Pages</a>
-          <a routerLink="/blog">Blog</a>
-        </nav>
-      </aside>
-      
-      <main>
-        <!-- Aquí se cargará el contenido específico de cada ruta -->
-        <router-outlet></router-outlet>
-      </main>
-    </div>
+<div>
+  <app-header></app-header>
   
-    <footer>
-      <!-- Aquí el pie de página -->
-      <p>&copy; 2024 Mi Aplicación</p>
-    </footer>
-  </div>
-  
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+  <app-footer></app-footer>
+
+</div>
