@@ -1,8 +1,36 @@
-<p>home works!</p>
+<app-wrapper>
+    <app-section variant="primary">
+        
+        <div class="w-full flex justify-center flex-wrap py-5 gap-y-5 gap-x-5">
+            <app-title-section
+                title="title"
+                title_bg="primary">
+            </app-title-section>
+            <app-title-section
+                variant="secondary"
+                title="title"
+                title_bg="secondary">
+            </app-title-section>
+            <app-title-section
+                variant="terciary"
+                title="title"
+                title_bg="terciary">
+            </app-title-section>
+        </div>
+        
+        <div class="w-full flex justify-center py-5 gap-x-5">
+            <app-button variant="primary" label="View"></app-button>
+            <app-button variant="secondary" label="View"></app-button>
+            <app-button variant="terciary" label="View"></app-button>
+            <app-button variant="filled" label="View"></app-button>
+        </div>
+    
+    </app-section>
 
-<hr/>
+    <app-section variant="secondary">
+        <app-skill-carousel></app-skill-carousel>
+    </app-section>
+</app-wrapper>
 
-<app-button variant="primary" label="View"></app-button>
-<app-button variant="secondary" label="View"></app-button>
-<app-button variant="terciary" label="View"></app-button>
-<app-button variant="filled" label="View"></app-button>
+
+
