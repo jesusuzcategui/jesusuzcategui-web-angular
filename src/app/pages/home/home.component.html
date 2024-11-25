@@ -1,8 +1,45 @@
-<p>home works!</p>
+<app-wrapper>
+    <app-section variant="primary">
+        
+        <div class="flex flex-wrap justify-center w-full py-5 gap-y-5 gap-x-5">
+            <app-title-section
+                title="title"
+                title_bg="primary">
+            </app-title-section>
+            <app-title-section
+                variant="secondary"
+                title="title"
+                title_bg="secondary">
+            </app-title-section>
+            <app-title-section
+                variant="terciary"
+                title="title"
+                title_bg="terciary">
+            </app-title-section>
+        </div>
+        
+        <div class="flex flex-wrap justify-center w-full py-5 gap-x-5 gap-y-8">
+            <app-button variant="primary" label="View"></app-button>
+            <app-button variant="secondary" label="View"></app-button>
+            <app-button variant="terciary" label="View"></app-button>
+            <app-button variant="filled" label="View"></app-button>
+        </div>
+    
+    </app-section>
+</app-wrapper>
 
-<hr/>
+<app-section class="pt-[50px] pb-[50px]" variant="terciary">
+    <app-wrapper>
+        <div class="mb-[31px] md:mb-[55px]">
+            <app-title-section
+                variant="terciary"
+                title="title"
+                title_bg="MY FAVORITE SKILLS">
+            </app-title-section>
+        </div>
+        <app-skill-carousel></app-skill-carousel>
+    </app-wrapper>
+</app-section>
 
-<app-button variant="primary" label="View"></app-button>
-<app-button variant="secondary" label="View"></app-button>
-<app-button variant="terciary" label="View"></app-button>
-<app-button variant="filled" label="View"></app-button>
+
+
