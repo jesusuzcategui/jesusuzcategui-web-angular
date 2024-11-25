@@ -7,6 +7,9 @@ import { WrapperComponent } from './wrapper/wrapper.component';
 import { TitleSectionComponent } from './title-section/title-section.component';
 import { SwiperComponent } from './swiper/swiper.component';
 import { SkillCarouselComponent } from './skill-carousel/skill-carousel.component';
+import { LogoComponent } from './logo/logo.component';
+import { DesktopMenuComponent } from './desktop-menu/desktop-menu.component';
+import { LinkComponent } from './link/link.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +17,9 @@ import { SkillCarouselComponent } from './skill-carousel/skill-carousel.componen
     SectionComponent,
     WrapperComponent,
     TitleSectionComponent,
+    DesktopMenuComponent,
+    LinkComponent,
+    LogoComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +33,10 @@ import { SkillCarouselComponent } from './skill-carousel/skill-carousel.componen
     WrapperComponent,
     TitleSectionComponent,
     SwiperComponent,
-    SkillCarouselComponent
+    SkillCarouselComponent,
+    DesktopMenuComponent,
+    LinkComponent,
+    LogoComponent
   ]
 })
 export class SharedModule { }

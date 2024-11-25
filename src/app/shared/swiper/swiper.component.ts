@@ -32,7 +32,7 @@ export class SwiperComponent implements AfterViewInit {
       ?.firstChild as HTMLElement;
 
       shadowRoot.style.paddingBottom = '35px';
-    }, 300);
+    }, 500);
   }
 
   nextSlide() : void {

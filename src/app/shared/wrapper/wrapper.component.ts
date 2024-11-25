@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-wrapper',
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   standalone: false
 })
 export class WrapperComponent {
+  @Input() class : string = '';
 
+  get classWrapper() : string {
+    return `${this.class} w-full max-w-[1200px] mx-auto`;
+  }
 }

@@ -2,11 +2,14 @@
     <swiper-container
         class="swiper"
         slides-per-view="7"
-        space-between="16"
-        [loop]="true"
+        space-between="60"
+        autoplay="true"
+        autoplay-delay="3500"
+        autoplay-disable-on-interaction="false"
+        pagination="true"
         [breakpoints]="{
             '280': {
-                'slidesPerView': 1.6
+                'slidesPerView': 3
             },
             '768': {
                 'slidesPerView': 7
@@ -15,7 +18,10 @@
         >
         <swiper-slide *ngFor="let sk of skills">
             <div *ngIf="sk.fields.logo != undefined || sk.fields.logo != null">
-                <img [src]="getLogoUrl(sk.fields.logo)" [alt]="sk.fields.titleskill" />
+                <img
+                    class="w-[100px]"
+                    [src]="getLogoUrl(sk.fields.logo)"
+                    [alt]="sk.fields.titleskill" />
             </div>
         </swiper-slide>
     </swiper-container>

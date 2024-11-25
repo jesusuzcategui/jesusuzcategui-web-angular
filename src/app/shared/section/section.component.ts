@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class SectionComponent {
   @Input() variant : string = 'normal';
+  @Input() class   : string = '';
 
   get sectionClass() : string {
     const baseClass = 'w-full px-[20px] md:px-[31px] py-[35px] md:py-[45px]';
@@ -18,6 +19,6 @@ export class SectionComponent {
       terciary:  'bg-textprimary',
     };
 
-    return `${baseClass} ${variants[this.variant] || variants['primary']}`;
+    return `${baseClass} ${this.class} ${variants[this.variant] || variants['primary']}`;
   };
 }
