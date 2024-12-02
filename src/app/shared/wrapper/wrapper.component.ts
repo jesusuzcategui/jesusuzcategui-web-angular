@@ -10,6 +10,6 @@ export class WrapperComponent {
   @Input() class : string = '';
 
   get classWrapper() : string {
-    return `${this.class} w-full max-w-[1200px] mx-auto`;
+    return `${this.class} w-full px-[30px] mx-auto`;
   }
 }

@@ -1,10 +1,13 @@
-<header class="w-full md:h-[100px] ">
+<header class="w-full md:h-[100px] border-primary border-b">
     <app-wrapper class="h-full">
-        <div class="flex items-center justify-between h-full px-5 border-b border-primary">
+        <div class="flex items-center h-full justify-evenly">
             <div class="">
+                <app-lang-switch></app-lang-switch>
+            </div>
+            <div class="flex flex-grow-[1] justify-center">
                 <app-logo></app-logo>
             </div>
-            <div class="flex-grow-[1]">
+            <div class="">
                 <app-desktop-menu></app-desktop-menu>
             </div>
         </div>

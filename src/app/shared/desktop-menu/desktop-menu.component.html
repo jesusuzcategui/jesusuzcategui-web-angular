@@ -1,32 +1,19 @@
 <nav class="flex items-center justify-end">
     <ul class="flex items-center gap-x-[30px]">
         <li>
-            <app-link href="/">
-                Home
+            <app-link [href]="buildUrl('/')">
+                {{ 'MENU.HOME' | translate }}
             </app-link>
         </li>
         <li>
-            <app-link href="/">
-                Projects
+            <app-link [href]="buildUrl('/learn')">
+                {{ 'MENU.LEARN' | translate }}
             </app-link>
         </li>
         <li>
-            <app-link href="/">
-                Courses
+            <app-link [href]="buildUrl('/contact')">
+                {{ 'MENU.CONTACT' | translate }}
             </app-link>
-        </li>
-        <li>
-            <app-link href="/">
-                Tutorials
-            </app-link>
-        </li>
-        <li>
-            <app-link href="/">
-                Contact
-            </app-link>
-        </li>
-        <li>
-            <app-button variant="filled" label="Download CV"></app-button>
         </li>
     </ul>
 </nav>

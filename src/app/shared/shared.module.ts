@@ -10,6 +10,9 @@ import { SkillCarouselComponent } from './skill-carousel/skill-carousel.componen
 import { LogoComponent } from './logo/logo.component';
 import { DesktopMenuComponent } from './desktop-menu/desktop-menu.component';
 import { LinkComponent } from './link/link.component';
+import { LangSwitchComponent } from './lang-switch/lang-switch.component';
+import { LangService } from './lang.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -19,14 +22,16 @@ import { LinkComponent } from './link/link.component';
     TitleSectionComponent,
     DesktopMenuComponent,
     LinkComponent,
-    LogoComponent
+    LogoComponent,
+    LangSwitchComponent
   ],
   imports: [
     CommonModule,
     SwiperComponent,
-    SkillCarouselComponent
+    SkillCarouselComponent,
+    TranslateModule
   ],
-  providers: [ContentfulService],
+  providers: [ContentfulService, LangService],
   exports: [
     ButtonComponent,
     SectionComponent,
@@ -36,7 +41,8 @@ import { LinkComponent } from './link/link.component';
     SkillCarouselComponent,
     DesktopMenuComponent,
     LinkComponent,
-    LogoComponent
+    LogoComponent,
+    LangSwitchComponent
   ]
 })
 export class SharedModule { }

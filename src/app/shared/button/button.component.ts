@@ -14,7 +14,7 @@ export class ButtonComponent {
 
   get buttonClasses(): string {
     const baseClass =
-      'h-[35px] md:h-[45px] transition ease-in-out delay-100 inline-flex items-center justify-center px-[30px] pt-[8.5px] pb-[8.5px] border-[2px] rounded-[50px] font-dm_sans tracking-[1px]';
+      'h-[35px] md:h-[45px] transition ease-in-out delay-100 inline-flex items-center justify-center px-[30px] pt-[8.5px] pb-[8.5px] border-[2px] rounded-[5px] font-dm_sans tracking-[1px]';
 
     const variants: { [key: string]: string } = {
       primary:

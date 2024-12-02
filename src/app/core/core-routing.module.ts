@@ -4,19 +4,24 @@ import { MainLayoutComponent } from '../layouts/main-layout/main-layout.componen
 
 const routes: Routes = [
   {
-    path: '',
+    path: ':lang',
     component: MainLayoutComponent,
     children: [
       {
         path: '',
-        loadChildren: () => import('../pages/pages.module').then(m => m.PagesModule)
-      }
-    ]
+        loadChildren: () => import('../pages/pages.module').then((m) => m.PagesModule),
+      },
+    ],
+  },
+  {
+    path: '',
+    redirectTo: '/es', // Redirige a español si no hay idioma en la URL
+    pathMatch: 'full',
   },
   {
     path: '**',
-    redirectTo: ''
-  }
+    redirectTo: '/es', // Redirige al idioma predeterminado para rutas no válidas
+  },
 ];
 
 @NgModule({
